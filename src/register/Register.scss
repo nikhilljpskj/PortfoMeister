@@ -1,0 +1,114 @@
+.register{
+    height: 100vh;
+    /* //to fill the full */
+    /* // background-color: #f4ae6c9c; */
+    /* //background color */
+    background: linear-gradient(rgba(203, 161, 34, 0.582),rgba(13, 79, 101, 0.653)), url("https://wallpapercave.com/dwp2x/wp8448751.jpg")center;
+    display: flex;
+    /* //center the content */
+    align-items: center;
+    justify-content: center;
+
+
+    .card{
+        display: flex;
+        flex-direction: row-reverse;
+        /* // ro reverse(ie register 1st and image 2nd) */
+        background-color: rgba(232, 237, 241, 0);
+        width: 50%;
+        /* //for the login and register winidow */
+        border-radius: 20px;
+        min-height: 400px;
+        /* //size of the register and login window */
+
+        .left{
+            flex: 0;
+            /* //to adjust the login and register section side by side */
+            background: linear-gradient(rgba(122, 89, 223, 0.349),rgba(122, 208, 107, 0.284)), url("https://wallpapercave.com/dwp2x/wp8448715.png")center;
+            /* //background image of login and linear-background to give a gradient color over the image */
+            background-size: cover;
+            /* //to adjust the image zoom */
+            padding: 50px;
+            display: flex;
+            /* //align the components vertically */
+            flex-direction: column;
+            /* //to arrange the elements in column(verticcal) */
+            gap: 30px;
+            border-radius: 0px 0px 90px 0px;
+            color: white;
+            h1{
+                font-size: 40px;
+                line-height: 35px;
+            }
+            
+            span{
+                font-size: 12px;
+                font-weight: 600;
+            }
+            .cta-button {
+                width: 120px;
+                background: linear-gradient(rgb(21, 87, 255),rgba(5, 176, 255, 0.747)), url("")center;
+                margin: 0 auto;
+                padding: 10px;
+                align-items: center;
+                justify-content: center;
+                border-radius: 9px;
+                border: none;
+                color: #ffffff;
+                font-weight: bold;
+                cursor: pointer;
+
+                
+              }
+                
+            
+        }
+
+
+
+        .right{
+            flex: 1;
+            /* //to adjust the login and register section side by side */
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            justify-content: center;
+            border-radius: 90px 0px 0px 0px;
+            background: linear-gradient(rgba(122, 89, 223, 0.349),rgba(122, 208, 107, 0.284)), url("")center;
+            h1{
+                color: #555;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                input{
+                    border: none;
+                    border-radius: 9px;
+                    border-bottom: 1px solid lightgray;
+                    padding: 20px 10px;
+                    /* // width: 220px; */
+
+                }
+                .cta-button {
+                    width: 120px;
+                    background: linear-gradient(rgb(21, 87, 255),rgba(5, 176, 255, 0.747)), url("")center;
+                    margin: 0 auto;
+                    padding: 10px;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 9px;
+                    border: none;
+                    color: #ffffff;
+                    font-weight: bold;
+                    cursor: pointer;
+
+                    &:hover {
+                        background:linear-gradient(rgb(21, 255, 25),rgba(5, 255, 147, 0.747));
+                      }
+                  }
+            }
+        }
+    }
+}

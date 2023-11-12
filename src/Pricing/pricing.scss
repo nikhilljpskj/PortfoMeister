@@ -1,0 +1,110 @@
+.pricing {
+    text-align: center;
+    padding: 50px;
+    background-color: #f0f0f0;
+  
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  
+    .plans {
+      display: flex;
+      justify-content: space-around;
+  
+      .plan {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 0 10px;
+        flex: 1;
+  
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          color: #666;
+          margin-bottom: 20px;
+        }
+  
+        .price {
+          font-size: 1.2rem;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+  
+        button {
+          background-color: #4caf50;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 1rem;
+  
+          &:hover {
+            background-color: #45a049;
+          }
+        }
+      }
+    }
+  
+    .comparison-table {
+      margin-top: 50px;
+  
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+  
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+  
+        th, td {
+          border: 1px solid #ddd;
+          padding: 8px;
+          text-align: left;
+        }
+  
+        th {
+          background-color: #f2f2f2;
+        }
+  
+        td {
+          text-align: center;
+        }
+      }
+    }
+  
+    .payment-methods {
+        margin-top: 50px;
+      
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 20px;
+        }
+      
+        p {
+          margin-bottom: 20px;
+          color: #666;
+        }
+      
+        .payment-image-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      
+          img {
+            max-width: 60%; /* Adjust the max-width as needed */
+            max-height: 60%; /* Adjust the max-height as needed */
+          }
+        }
+      }
+      
+  }
+  

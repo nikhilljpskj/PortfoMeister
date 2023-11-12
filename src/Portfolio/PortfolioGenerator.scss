@@ -1,0 +1,41 @@
+.portfolio-generator-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #f0f0f0;
+  
+    .form-container {
+      width: 40%;
+  
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+  
+        label {
+          margin-bottom: 10px;
+        }
+  
+        input {
+          margin-bottom: 20px;
+          padding: 10px;
+        }
+      }
+    }
+  
+    .template-container {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      .template {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  

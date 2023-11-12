@@ -1,0 +1,118 @@
+.login{
+    height: 100vh;
+    background-color: rgb(108, 169, 244);
+    background: linear-gradient(rgba(18, 74, 135, 0.878),rgba(88, 173, 139, 0.653)), url("")center;
+    display: flex;
+    /* center the content */
+    align-items: center;
+    justify-content: center;
+
+    .card{
+        display: flex;
+        background-color: rgba(232, 237, 241, 0);
+        width: 60%;
+        /* for the login and register winidow */
+        height: 500px;
+        border-radius: 20px;
+        min-height: 400px;
+        /* //size of the register and login window */
+        .left{
+            flex: 1;
+            /* //to adjust the login and register section side by side */
+            background: linear-gradient(rgba(122, 89, 223, 0.349),rgba(122, 208, 107, 0.284)), url("https://wallpapercave.com/dwp2x/wp6350571.jpg")center;
+            /* //background image of login and linear-background to give a gradient color over the image */
+            background-size: cover;
+            /* //to adjust the image zoom */
+            padding: 100px;
+            display: flex;
+            /* //align the components vertically */
+            flex-direction: column;
+            /* //to arrange the elements in column(verticcal) */
+            gap: 30px;
+            border-radius: 10px 0px 0px 60px;
+            color: white;
+            h1{
+                font-size: 40px;
+                line-height: 35px;
+            }
+            
+            span{
+                font-size: 12px;
+                text-shadow: #555;
+                font-weight: 600;
+                color: rgb(242, 242, 242);
+            }
+            /* .registerbtn{    
+                height: 50px;
+                position: absolute;
+                top:50%;
+                background-color:#0a0a23;
+                color: #ffe9e9;
+                border:none;
+                border-radius:10px;
+                box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+            }
+             */
+             .cta-button {
+                width: 120px;
+                background: linear-gradient(rgb(21, 87, 255),rgba(5, 176, 255, 0.747)), url("")center;
+                margin: 0 auto;
+                padding: 10px;
+                align-items: center;
+                justify-content: center;
+                border-radius: 9px;
+                border: none;
+                color: #ffffff;
+                font-weight: bold;
+                cursor: pointer;
+
+              }
+        }
+
+        .right{
+            flex: 1;
+            /* //to adjust the login and register section side by side */
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 0px 60px 10px 0px;
+            gap: 40px;
+            justify-content: center;
+            background: linear-gradient(#7ad06b48,#7a59df59), url("")center;
+            h1{
+                color: #555;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                input{
+                    border: none;
+                    border-bottom: 1px solid lightgray;
+                    padding: 20px 10px;
+                    /* width: 220px; */
+                    border-radius: 9px;
+
+                }
+                .cta-button {
+                    width: 120px;
+                    background: linear-gradient(rgb(21, 87, 255),rgba(5, 176, 255, 0.747)), url("")center;
+                    margin: 0 auto;
+                    padding: 10px;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 9px;
+                    border: none;
+                    color: #ffffff;
+                    font-weight: bold;
+                    cursor: pointer;
+
+                    &:hover {
+                        background:linear-gradient(rgb(21, 255, 25),rgba(5, 255, 147, 0.747));
+                      }
+                  }
+                  
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+/* Header.css */
+.header-bg {
+  background: linear-gradient(#1e1e1e,#121111), url("")center;
+  // position: fixed;
+  // z-index: 2;
+  // box-sizing: border-box;
+    transition: 0.5s;
+    color: blanchedalmond;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    // position: absolute;
+  }
+  
+  .nav-menu {
+    display: flex;
+  }
+
+  .home-icon{
+    font-size: large;
+    font-weight: bold;
+    // color: black;
+    font-size: 30px;
+    padding: 0 1rem;
+    background: -webkit-linear-gradient(#eee, #2d2b2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .nav-menu-item {
+    font-size: 1.05rem;
+    font-weight: 500;
+    padding: 0rem 1rem 1rem 1rem;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none; 
+  }
+  .nav-menu-item-signout{
+    font-size: 1.05rem;
+    font-weight: 500;
+    // padding: 0rem 13rem 1rem 1rem;
+    padding-left: 590px;
+    justify-content: left;
+    cursor: pointer;
+    color: #fafafafe;
+    text-decoration: none; 
+  }
+  .nav-menu-item-signouticon{
+    color: #ffffff;
+    
+  }
+  
+  .get-started-button {
+    background-color: #61dafb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  

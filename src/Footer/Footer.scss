@@ -1,0 +1,51 @@
+/* Footer.css */
+.footer-bg {
+  background-color: #0e0e0e;
+  color: #fff;
+  padding: 2rem 0; /* Adjust the vertical padding as needed */
+  width: 100%; /* Use 100% width to span the entire viewport */
+ 
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap; /* Ensure content wraps if it overflows horizontally */
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.footer-column {
+  flex-basis: calc(16.6% - 20px); /* Adjust the width and include spacing */
+  text-align: justify;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer li {
+  margin-bottom: 5px;
+}
+
+.footer li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300; /* Thin font weight */
+  font-size: 0.8rem;
+}
+
+.footer p {
+  flex-basis: 100%;
+  margin-top: 20px;
+}
+
+.footer p:last-child {
+  margin-top: 0;
+}

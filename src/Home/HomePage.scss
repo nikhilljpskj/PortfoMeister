@@ -1,0 +1,139 @@
+/* src/HomePage.css */
+::-webkit-scrollbar {
+  display: none;
+}
+.home {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: rgb(255, 254, 254);
+  max-width: 1920px; /* Limit the maximum width to 1920px */
+  margin: 0 auto; /* Center-align the content horizontally */
+}
+
+.get-started-button {
+  background-color: #61dafb;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Update the styles for the hero section */
+.hero {
+  flex: 1;
+  padding: 50px;
+  margin: 0 auto;
+  background: linear-gradient(rgba(122, 89, 223, 0.349),rgba(122, 208, 107, 0.284)), url("https://wallpapercave.com/dwp2x/wp10455999.jpg")center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  height: 55vh;
+  width: auto;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+// .cta-button {
+//   width: 120px;
+//   background: linear-gradient(rgb(21, 87, 255),rgba(5, 176, 255, 0.747)), url("")center;
+//   margin: 0 auto;
+//   padding: 10px;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 9px;
+//   border: none;
+//   color: #ffffff;
+//   font-weight: bold;
+//   cursor: pointer;
+// }
+
+
+
+
+
+
+
+
+.button-gs {
+  animation: wiggle 2s linear infinite;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+
+.button-gs {
+  // position: absolute;
+  // left: calc(50% - 3em);
+  // top: calc(50% - 0em);
+  margin: 0 auto;
+  text-decoration: none;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  
+  height: 20px;
+  width: 120px;;
+  
+  background: #393737;
+  background: linear-gradient(top, #555555, #333);
+  border: none;
+  border-top: 3px solid rgb(8, 56, 118);
+  border-bottom: 3px solid rgb(8, 56, 118);
+  border-radius: 0 0 0.2em 0.2em;
+  color: #fff;
+  font-family: Helvetica, Arial, Sans-serif;
+  font-size: 1em;
+  transform-origin: 50% 5em;
+}
+
+
+
+
+
+
+
+
+/* Update the styles for other sections to match the desktop size */
+.features,
+.foot,
+.testimonials,
+.templates {
+  height: 100%;
+  width: 97.5vw;
+}
+
+.templates-section {
+  margin-bottom: 300px;
+}
