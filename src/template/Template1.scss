@@ -1,0 +1,109 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  // Header styles
+  .header {
+    background-color: lightgrey;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //position: fixed;
+  
+    h1 {
+      margin: 0;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+    }
+  
+    ul {
+      list-style: none;
+      display: flex;
+  
+      li {
+        margin-right: 20px;
+  
+        a {
+          text-decoration: none;
+          color: black;
+          cursor: pointer;
+        }
+      }
+    }
+  
+    .hamburger {
+      cursor: pointer;
+    }
+  }
+  
+  // Section styles
+  .hero,
+  .about,
+  .project {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    // Add specific styles for each section
+  }
+  
+// ... (previous styles)
+
+.footer {
+    background-color: grey;
+    padding: 8px; // Adjust the padding to control the height
+    color: white;
+  
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+  
+      .left {
+        width: 48%; // Adjust the width for responsiveness
+        margin-right: 2%; // Adjust the margin for spacing
+  
+        .location,
+        .phone,
+        .email {
+          margin-bottom: 5px; // Adjust the margin for spacing
+  
+          p {
+            margin: 0;
+          }
+  
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+  
+      .right {
+        width: 48%; // Adjust the width for responsiveness
+  
+        h4 {
+          margin-bottom: 10px; // Adjust the margin for spacing
+        }
+  
+        p {
+          margin-bottom: 10px; // Adjust the margin for spacing
+        }
+  
+        .social-container {
+          a {
+            text-decoration: none;
+            color: white;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }  

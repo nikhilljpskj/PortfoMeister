@@ -10,7 +10,7 @@ function Header() {
       <div className="nav-menu">
         {/* <Link to="/" className="nav-menu-item"><div className='home-icon'>Home</div></Link> */}
         <Link to="/" className="home-icon">PortfoMeister</Link>
-        <Link to="/features" className="nav-menu-item">Features</Link>
+        
         <Link to="/pricing" className="nav-menu-item">Pricing</Link>
         <Link to="/templates" className="nav-menu-item">Templates</Link>
         <Link to="/blog" className="nav-menu-item">Blog</Link>

@@ -143,7 +143,7 @@ function TemplateCollect() {
 
   const handleUseTemplate = (template) => {
     setSelectedTemplate(template);
-    navigate('/portfo');
+    navigate('/design');
   };
 
   const handleClosePopup = () => {

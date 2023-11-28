@@ -10,6 +10,8 @@ import Pricing from './Pricing/pricing';
 import Blog from './Blog/blog';
 import Contactus from './ContactUs/contactus';
 import PortfolioGenerator from './Portfolio/PortfolioGenerator';
+import Template1 from './template/Template1';
+import PortFolioDesign from './Portfolio/PortFolioDesign';
 
 function App() {
   return (
@@ -19,11 +21,13 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/templates" element={<TemplateCollect />} />
+        <Route path="/template1" element={<Template1 />} />
         <Route path="/features" element={<Features />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact-us" element={<Contactus />} />
         <Route path='/portfo' element={<PortfolioGenerator />}/>
+        <Route path='/design' element={<PortFolioDesign />}/>
 
 
       </Routes>

@@ -121,7 +121,8 @@ function Pricing() {
   <div className="payment-image-container">
   <img src={Payment} alt="Accepted Payment Methods" />
   </div>
-</div>
+</div>+
+
         {/* Brief Regarding Premium Plans */}
         <div className="premium-plans">
           <h2>Premium Plans</h2>
