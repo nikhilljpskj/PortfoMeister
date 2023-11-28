@@ -155,6 +155,7 @@ function TemplateCollect() {
     console.log('Form data submitted:', formData);
   };
 
+  
   return (
     <>
       <div className="template-collect">
