@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Template1 from '../template/Template1'; // Adjust the path based on your file structure
 import './PortFolioDesign.scss'; 
+import Template2 from '../template/Template2';
 
 const PortFolioDesign = () => {
   // State for input values
@@ -14,7 +15,7 @@ const PortFolioDesign = () => {
 
   const handleAddToSite = () => {
 
-     <Template1 name={name} description={description} project={project} about={about} />
+     <Template2 name={name} description={description} project={project} about={about} image={image} />
 
     // For now, let's pass only 'name'
     // <Template1 name={name} image={image} resume={resume} />;
@@ -36,7 +37,7 @@ const PortFolioDesign = () => {
       {/* Right Section displaying Template1 */}
       <div className="right-section">
         <h2>Template Preview</h2>
-        <Template1 name={name} description={description} project={project} about={about}  />
+        <Template2 name={name} description={description} project={project} about={about} image={image} />
       </div>
     </div>
   );

@@ -12,6 +12,7 @@ import Contactus from './ContactUs/contactus';
 import PortfolioGenerator from './Portfolio/PortfolioGenerator';
 import Template1 from './template/Template1';
 import PortFolioDesign from './Portfolio/PortFolioDesign';
+import Template2 from './template/Template2';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/contact-us" element={<Contactus />} />
         <Route path='/portfo' element={<PortfolioGenerator />}/>
         <Route path='/design' element={<PortFolioDesign />}/>
+        <Route path='/template2' element={<Template2 />}/>
 
 
       </Routes>
