@@ -18,15 +18,15 @@ const Template2 = ({ name, description, project, about, image,facebooklink, inst
       // image: PickMeals,
       title: "Project 1",
       text:
-        "Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.",
+      `${project}`, 
         linktoproject:"click here to view the project"
     },
     {
       // image: DeliveryMeals,
       title: "Project 2",
       text:
-        "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
-      linktoproject:"click here to view the project"
+      `${project}`,
+          linktoproject:"click here to view the project"
     },
   ];
 

@@ -113,16 +113,16 @@ const PortFolioDesign = () => {
           {selectedTemplate && (
             <>
               {selectedTemplate.id === 1 && (
-                <Template1 name={name} />
+                <Template1 name={name} email={email} project={project} description={description} linkedinlink={linkedinlink} githublink={githublink} address={address} about={about} phone={phone} image={image} resume={resume} facebooklink={facebooklink} twitterlink={twitterlink} instagramlink={instagramlink} />
               )}
               {selectedTemplate.id === 2 && (
-                <Template3 name={name} />
+                <Template3 name={name} email={email} project={project} description={description} linkedinlink={linkedinlink} githublink={githublink} address={address} about={about} phone={phone} image={image} resume={resume} facebooklink={facebooklink} twitterlink={twitterlink} instagramlink={instagramlink} />
               )}
               {selectedTemplate.id === 3 && (
-                <Template2 name={name} />
+                <Template2 name={name} email={email} project={project} description={description} linkedinlink={linkedinlink} githublink={githublink} address={address} about={about} phone={phone} image={image} resume={resume} facebooklink={facebooklink} twitterlink={twitterlink} instagramlink={instagramlink} />
               )}
               {selectedTemplate.id === 4 && (
-                <Template4 name={name} />
+                <Template4 name={name} email={email} project={project} description={description} linkedinlink={linkedinlink} githublink={githublink} address={address} about={about} phone={phone} image={image} resume={resume} facebooklink={facebooklink} twitterlink={twitterlink} instagramlink={instagramlink} />
               )}
             </>
           )}
