@@ -11,9 +11,9 @@ import Features from '../Features/Feature';
 function HomePage() {
   return (
 
-    <div className="home">
+    <div className="homepage">
       <Header />
-      <div className="hero">
+      <div className="herohome">
         <h1>Welcome to PortfoMeister</h1>
         <p>Create and showcase your professional portfolio with ease.</p>
         <Link to= "/templates" className="button-gs" >Get Started</Link>

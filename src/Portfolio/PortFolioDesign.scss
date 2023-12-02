@@ -1,7 +1,8 @@
 // Page.scss
 body {
     margin: 0;
-    
+    min-height: auto;    
+  
   }
   
   .page-container {
@@ -15,9 +16,14 @@ body {
     flex: 1;
     width: 29%; // 20% of the viewport width
     padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
+    // background-color: #f0f0f0;
+    border-radius: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    // overflow-x: auto; // This enables horizontal scrolling
+  // white-space: nowrap; // This prevents text from wrapping to the next line
+  
+    background: linear-gradient(rgba(122, 89, 223, 0.349),rgba(122, 208, 107, 0.284)), url("https://wallpapercave.com/dwp2x/wp8991892.jpg")center;
   
     h2 {
       font-size: 1.5rem;
@@ -58,7 +64,8 @@ body {
     flex: 4; // 80% of the viewport width
     width: 70%;
     padding: 20px;
-    background-color: #fff;
+    // background-color: #fff;
+    background: linear-gradient(rgba(38, 35, 46, 0.349),rgba(107, 184, 208, 0.284));
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow-y: auto; 

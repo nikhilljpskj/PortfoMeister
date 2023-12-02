@@ -1,16 +1,67 @@
-import React from 'react';
-import './pricing.scss'
-// import './TemplateCollection.scss'; 
+import React, { useEffect } from 'react';
+import './pricing.scss';
 import Header from '../Header/Header';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Payment from '../Assets/payment.png';
 
 function Pricing() {
-    return (
+  // Function to open Razorpay Checkout
+  const openRazorpayCheckout = async (planId, planAmount) => {
+    // Make an API call to your server to get the Razorpay order details
+    const response = await fetch('http://localhost:3000/razorpay/order', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        planId,
+        planAmount,
+      }),
+    });
+
+    const orderDetails = await response.json();
+
+    const options = {
+      key: 'rzp_test_79aimvjGGIKYEa', // Replace with your actual Razorpay API key
+      amount: orderDetails.amount,
+      currency: 'INR',
+      name: 'Your Company Name',
+      description: `Payment for ${planId} Plan`,
+      order_id: orderDetails.id,
+      handler: function (response) {
+        // Handle the successful payment response
+        console.log(response);
+        alert('Payment successful!');
+      },
+      prefill: {
+        email: 'example@example.com',
+      },
+      theme: {
+        color: '#1A7E1E',
+      },
+    };
+
+    const razorpay = new window.Razorpay(options);
+    razorpay.open();
+  };
+
+  useEffect(() => {
+    // Load Razorpay script dynamically
+    const script = document.createElement('script');
+    script.src = 'https://checkout.razorpay.com/v1/checkout.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Remove the script when the component unmounts
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  return (
     <div>
-        <Header />
-        <div className="pricing">
-           
+      <Header />
+      <div className="pricing">
         <h1>Pricing Plans</h1>
         <div className="plans">
           {/* Plan 1 */}
@@ -18,25 +69,24 @@ function Pricing() {
             <h2>Basic Plan</h2>
             <p>Perfect for individuals</p>
             <div className="price">$9.99/month</div>
-            <button>Get Started</button>
+            <button onClick={() => openRazorpayCheckout('basic', 999)}>Get Started</button>
           </div>
-  
+
           {/* Plan 2 */}
           <div className="plan">
             <h2>Pro Plan</h2>
             <p>Great for small businesses</p>
             <div className="price">$19.99/month</div>
-            <button>Get Started</button>
+            <button onClick={() => openRazorpayCheckout('pro', 1999)}>Get Started</button>
           </div>
-  
+
           {/* Plan 3 */}
           <div className="plan">
             <h2>Premium Plan</h2>
             <p>For larger enterprises</p>
             <div className="price">$29.99/month</div>
-            <button>Get Started</button>
+            <button onClick={() => openRazorpayCheckout('premium', 2999)}>Get Started</button>
           </div>
-          
         </div>
         <div className="comparison-table">
   <h2>Plan Features</h2>

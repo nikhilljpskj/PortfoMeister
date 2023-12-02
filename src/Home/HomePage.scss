@@ -2,7 +2,7 @@
 ::-webkit-scrollbar {
   display: none;
 }
-.home {
+.homepage {
   font-family: Arial, sans-serif;
   text-align: center;
   background-color: rgb(255, 254, 254);
@@ -21,44 +21,26 @@
 }
 
 /* Update the styles for the hero section */
-.hero {
+.herohome {
   flex: 1;
   padding: 50px;
   margin: 0 auto;
-  background: linear-gradient(rgba(122, 89, 223, 0.349),rgba(122, 208, 107, 0.284)), url("https://wallpapercave.com/dwp2x/wp10455999.jpg")center;
+  // background: linear-gradient(rgba(122, 89, 223, 0.349),rgba(122, 208, 107, 0.284)), url("https://wallpapercave.com/dwp2x/wp10455999.jpg")center;
+  background: url("https://wallpapercave.com/wp/wp12339081.jpg")center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   color: #fff;
-  height: 55vh;
+  height: 100vh;
   width: auto;
   padding: 100px 0;
   text-align: center;
 }
 
-.hero h1 {
+.herohome h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
-
-// .cta-button {
-//   width: 120px;
-//   background: linear-gradient(rgb(21, 87, 255),rgba(5, 176, 255, 0.747)), url("")center;
-//   margin: 0 auto;
-//   padding: 10px;
-//   align-items: center;
-//   justify-content: center;
-//   border-radius: 9px;
-//   border: none;
-//   color: #ffffff;
-//   font-weight: bold;
-//   cursor: pointer;
-// }
-
-
-
-
-
 
 
 
@@ -93,24 +75,21 @@
 
 
 .button-gs {
-  // position: absolute;
-  // left: calc(50% - 3em);
-  // top: calc(50% - 0em);
   margin: 0 auto;
   text-decoration: none;
   padding: 10px;
   align-items: center;
   justify-content: center;
   border-radius: 9px;
-  
-  height: 20px;
-  width: 120px;;
+  margin-top: 60px;
+  height: 40px;
+  width: 220px;;
   
   background: #393737;
   background: linear-gradient(top, #555555, #333);
   border: none;
-  border-top: 3px solid rgb(8, 56, 118);
-  border-bottom: 3px solid rgb(8, 56, 118);
+  border-top: 3px solid rgb(225, 0, 255);
+  border-bottom: 3px solid rgb(118, 8, 111);
   border-radius: 0 0 0.2em 0.2em;
   color: #fff;
   font-family: Helvetica, Arial, Sans-serif;
