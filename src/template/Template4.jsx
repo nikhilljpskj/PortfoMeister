@@ -8,37 +8,34 @@ import './Template4.scss';
 import prodimg from '../Assets/hero-image.png'
 
 
-const Template4 = ({
-  color,
-  click,
-  handleClick,
-  name,
-  description,
-  project,
-  about,
-  address,
-  phone,
-  email,
-  facebooklink,
-  instagramlink,
-  twitterlink,
-  githublink,
-  linkedinlink,
+const Template4 = ({temp4heading, temp4description,temp4url
 }) => {
   return (
 
       <div className="hero container">
         <div className="hero-content">
-          <h1>YOUR FEET DESERVE THE BEST</h1>
-          <p>
-            YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR
-            SHOES.YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR
-            SHOES.
+          <h1>{temp4heading}</h1>
+          <p style={{ fontSize: '36px' }}>
+            {temp4description}
           </p>
 
-          <div className="hero-btn">
-            <button className="secondary-btn">Shop Now </button>
-          </div>
+        <div className="hero-btn">
+          <a href={temp4url}
+            className="secondary-btn"
+            style={{ textDecoration: 'none' }} // Remove underline
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            <button
+              style={{
+                padding: '10px 20px', // Adjust padding for the desired size
+                fontSize: '16px', // Adjust font size for the desired size
+                      }}>Shop Now
+              </button>
+            </a>
+        </div>
+
+
 
           <div className="shopping">
             <p>Also Available On</p>

@@ -91,7 +91,7 @@ function TemplateCollect() {
               <div className="template-previewTwo">
                 <img
                   src={template.previewImage3}
-                  alt={`Preview of ${template.name}`}
+                  // alt={`Preview of ${template.name}`}
                   className="enlarge-on-hover"
                 />
               </div>

@@ -1,6 +1,7 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import React, { useState } from "react";
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 // Define your slider data here (you can import this from a data.js file)
 const sliderItems = [
@@ -128,7 +129,9 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-              <Button>USE NOW</Button>
+              <Link to="/templates" className="nav-menu-item">
+                <Button>USE NOW</Button>
+              </Link>
             </InfoContainer>
           </Slide>
         ))}

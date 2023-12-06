@@ -18,7 +18,15 @@
 
     .work-section-bottom {
       margin-top: 1rem !important;
+      // width: 600px;
+      // background-color: #2980b9;
     }
+
+    .work-section-info{
+      background: linear-gradient(rgba(124, 143, 163, 0.878),rgba(88, 173, 139, 0.653))center;
+      width: 700px;
+    }
+
     
   
     &.dark-mode {

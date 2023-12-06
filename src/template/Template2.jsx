@@ -6,29 +6,28 @@ import './Template2.scss';
 import { faFacebook, faInstagram, faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 
-const Template2 = ({ name, description, project, about, image,facebooklink, instagramlink, twitterlink, githublink, linkedinlink, email  }) => {
+const Template2 = ({ name, description, project, about, image,facebooklink, instagramlink, twitterlink, githublink, linkedinlink, email, project1title, project1description, project1url, project2title, project2description, project2url  }) => {
   const [isDarkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
     setDarkMode(!isDarkMode);
   };
 
-  const workInfoData = [
-    {
-      // image: PickMeals,
-      title: "Project 1",
-      text:
-      `${project}`, 
-        linktoproject:"click here to view the project"
-    },
-    {
-      // image: DeliveryMeals,
-      title: "Project 2",
-      text:
-      `${project}`,
-          linktoproject:"click here to view the project"
-    },
-  ];
+  // const workInfoData = [
+  //   { 
+
+  //     // image: "PickMeals",
+  //     head: 'Project 1',
+  //     title: project1title,
+  //     text:  project1description,
+  //   },
+  //   {
+  //     // image: "DeliveryMeals",
+  //     head: 'Project 2',
+  //     title: project2title,
+  //     text:  project1description,
+  //   },
+  // ];
 
   return (
     <div className={`template2-container ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
@@ -78,21 +77,31 @@ const Template2 = ({ name, description, project, about, image,facebooklink, inst
       </section>
       <section id="project" className="project-section">
         <h2>Projects</h2>
-        <div className="project-item">
-          <h4>{project}</h4>
-          {/* <p>{about}</p> */}
-        </div>
         <div className="work-section-bottom">
-          {workInfoData.map((data) => (
-            <div className="work-section-info" key={data.title}>
+          
+            <div className="work-section-info" >
               {/* <div className="info-boxes-img-container">
                 <img src={data.image} alt="" />
               </div> */}
-              <h2>{data.title}</h2>
-              <p>{data.text}</p>
-              <p>{data.linktoproject}</p>
+              <h4>Project 1</h4>
+              <h2>{project1title}</h2>
+              <h3>{project1description}</h3>
+              <p>{project1url}</p>
             </div>
-          ))}
+          
+        </div>
+        <div className="work-section-bottom">
+          
+            <div className="work-section-info" >
+              {/* <div className="info-boxes-img-container">
+                <img src={data.image} alt="" />
+              </div> */}
+              <h4>Project 2</h4>
+              <h2>{project2title}</h2>
+              <h3>{project2description}</h3>
+              <p>{project2url}</p>
+            </div>
+          
         </div>
       </section>
       <footer>

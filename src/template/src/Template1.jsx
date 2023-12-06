@@ -3,13 +3,29 @@ import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { FaBars, FaTimes, FaHome, FaPhone, FaMailBulk } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import resume from '../Assets/Sreyas_Official_Resume (1).pdf';
+import resume from '../../Assets/Sreyas_Official_Resume (1).pdf';
 import { Link } from 'react-router-dom';
 import "./Template1.scss";
 import { Phone } from '@material-ui/icons';
 
-const Template1 = ({ color, click, handleClick, name, description, project, about, address, phone, email, facebooklink, instagramlink, twitterlink, githublink, linkedinlink  }) => {
-   
+const Template1 = ({ color, click, handleClick, name, description, about, address, phone, email, facebooklink, instagramlink, twitterlink, githublink, linkedinlink,  project1title, project1description, project1url, project2title, project2description, project2url  }) => {
+  
+  // const workInfoData = [
+  //   { 
+  //     head: 'Project 1',
+  //     title: project1title,
+  //     text: project1description,
+  //     // linktoproject: project1url
+  //   },
+  //   { 
+  //     // image: DeliveryMeals,
+  //     head: 'Project 2',
+  //     title: project2title,
+  //     text: project2description,
+  //     // linktoproject: project2url
+  //   },
+  // ];
+  
   return (
     <div>
       <div>
@@ -51,16 +67,46 @@ const Template1 = ({ color, click, handleClick, name, description, project, abou
         </div>
       </div>
 
-      <div id="project" className="project">
-        <div className="components">
-          <h1>PROJECTS</h1>
-          <div>
-            <h2>{project}</h2>
-            <p>{project}</p>
-            <p><a href=" ">Click Here!!! </a>to view project details</p>
-          </div>
+      <div className='project'>
+      
+      <section id="project" className="project-section">
+        <h2>PROJECTS</h2>
+        <div className="work-section-bottom2">
+          
+            <div className="work-section-info">
+              <h3>Project 1</h3>
+              <h2>{project1title}</h2>
+              <p>{project1description}</p>
+              <p>
+                <Link to={project1url} style={{textDecoration:'none'}}>Click here to view the project</Link>
+              </p>
+
+            </div>
+        </div>   
+        <div className="work-section-bottom22">
+          
+            <div className="work-section-info" >
+              {/* <div className="info-boxes-img-container">
+                <img src={data.image} alt="" />
+              </div> */}
+              <h3>Project 2</h3>
+              <h2>{project2title}</h2>
+              <p>{project2description}</p>
+              <p>
+                <Link to={project2url} style={{textDecoration:'none'}}>Click here to view the project</Link>
+              </p>
+              
+            </div>
+          
         </div>
+        
+        <Link to={githublink} className="github social" style={{ textDecoration: 'none' }}>
+                         <h4>Click here to View more of my projects from Github</h4><FontAwesomeIcon icon={faGithub} size="2x" style={{ marginRight: '1rem' }} />
+              </Link>
+      </section>
+      
       </div>
+      
 
       <div className="footer">
         <div className="footer-container">
